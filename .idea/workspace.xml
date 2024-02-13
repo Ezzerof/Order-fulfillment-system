@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed28a1b7-f898-4ec0-a7f5-40870dba14a8" name="Changes" comment="Created the Order management microservice module&#10;- Created Models&#10;- Created Service&#10;- Created Repository&#10;- Created CustomExceptions&#10;- Created Utils">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-management-microservice/src/main/java/com/ezzerof/ordermanagementmicroservice/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-management-microservice/src/main/java/com/ezzerof/ordermanagementmicroservice/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-microservice/src/main/java/com/ezzerof/inventorymicroservice/exception/ProductNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-microservice/src/main/java/com/ezzerof/inventorymicroservice/exception/ProductNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-microservice/src/main/java/com/ezzerof/inventorymicroservice/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-microservice/src/main/java/com/ezzerof/inventorymicroservice/service/impl/ProductServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -52,7 +52,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "inventoryMicroservice",
     "jdk.selected.JAVA_MODULE": "18",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -67,6 +67,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ezzerof.inventorymicroservice.exception" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ezzerof.model" />
       <recent name="com.ezzerof.controller" />
@@ -125,7 +128,7 @@
       <workItem from="1707157924283" duration="5992000" />
       <workItem from="1707248486790" duration="1485000" />
       <workItem from="1707848334491" duration="75000" />
-      <workItem from="1707848937552" duration="2308000" />
+      <workItem from="1707848937552" duration="5874000" />
     </task>
     <task id="LOCAL-00001" summary="Created the Order management microservice module&#10;- Created Models&#10;- Created Service&#10;- Created Repository&#10;- Created CustomExceptions&#10;- Created Utils">
       <option name="closed" value="true" />
