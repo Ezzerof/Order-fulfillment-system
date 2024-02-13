@@ -9,6 +9,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @AllArgsConstructor
@@ -34,13 +35,19 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public Category updateCategory(String existingCategory, Category updatedCategory) {
         ValidationUtils.validateCategory(updatedCategory);
-        Category category = getCategoryByName(existingCategory);
-        return repository.save(updatedCategory);
+        Optional<Category> category = repository.findById(existingCategory);
+        if (category.isPresent())
+            return repository.save(updatedCategory);
+        else
+            throw new CategoryNotFoundException("Category not found");
     }
 
     @Override
     public void deleteCategory(String categoryName) {
-        Category category = repository.findById(categoryName).orElseThrow(() -> new CategoryNotFoundException("Category not found"));
-        repository.deleteById(categoryName);
+        Optional<Category> category = repository.findById(categoryName);
+        if (category.isPresent())
+            repository.deleteById(categoryName);
+        else
+            throw new CategoryNotFoundException("Category not found");
     }
 }

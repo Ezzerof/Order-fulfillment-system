@@ -9,6 +9,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @AllArgsConstructor
@@ -22,14 +23,22 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public Product updateProduct(Long productId, Product updatedProduct) {
         ValidationUtils.validateProduct(updatedProduct);
-        Product product = getProductById(productId);
-        return repository.save(product);
+        Optional<Product> product = repository.findById(productId);
+        if (product.isPresent()) {
+            updatedProduct.setId(productId);
+            return repository.save(updatedProduct);
+        } else {
+            throw new ProductNotFoundException("Product not found");
+        }
     }
 
     @Override
     public void deleteProduct(Long productId) {
-        Product product = repository.findById(productId).orElseThrow(() -> new ProductNotFoundException("Product not found"));
-        repository.deleteById(productId);
+        Optional<Product> product = repository.findById(productId);
+        if (product.isPresent())
+            repository.deleteById(productId);
+        else
+            throw new ProductNotFoundException("Product not found");
     }
 
     @Override
