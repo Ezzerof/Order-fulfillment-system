@@ -36,8 +36,9 @@ public class ItemServiceImpl implements ItemService {
 
     @Override
     public Item updateItem(Long itemId, Item updatedItem) {
+        ValidateObj.validateItem(updatedItem);
         Optional<Item> exitingItem = repository.findById(itemId);
-        if (exitingItem.isPresent() && updatedItem != null) {
+        if (exitingItem.isPresent()) {
             updatedItem.setItemId(itemId);
             return repository.save(updatedItem);
         }
