@@ -18,7 +18,7 @@ public class Order {
     private LocalDateTime deliveryDateTime;
     private String orderStatus;
     private String deliveryAddress;
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany
     @JoinColumn(name = "orderId")
     private List<Item> list;
 }
