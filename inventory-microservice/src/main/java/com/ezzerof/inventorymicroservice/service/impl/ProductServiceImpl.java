@@ -15,8 +15,8 @@ import java.util.List;
 public class ProductServiceImpl implements ProductService {
     private final ProductRepository repository;
     @Override
-    public Product getProductById(Long productName) {
-        return repository.findById(productName).orElseThrow(() -> new ProductNotFoundException("Product not found"));
+    public Product getProductById(Long productId) {
+        return repository.findById(productId).orElseThrow(() -> new ProductNotFoundException("Product not found"));
     }
 
     @Override
