@@ -4,23 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed28a1b7-f898-4ec0-a7f5-40870dba14a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ezzerof/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ezzerof/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-management-microservice/src/main/java/com/ezzerof/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-management-microservice/src/main/java/com/ezzerof/controller/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-management-microservice/src/main/java/com/ezzerof/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-management-microservice/src/main/java/com/ezzerof/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-management-microservice/src/main/java/com/ezzerof/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-management-microservice/src/main/java/com/ezzerof/model/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-management-microservice/src/main/java/com/ezzerof/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-management-microservice/src/main/java/com/ezzerof/model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-management-microservice/src/main/java/com/ezzerof/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-management-microservice/src/main/java/com/ezzerof/service/ItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-management-microservice/src/main/java/com/ezzerof/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-management-microservice/src/main/java/com/ezzerof/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-management-microservice/src/main/java/com/ezzerof/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-management-microservice/src/main/java/com/ezzerof/service/impl/ItemServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-management-microservice/src/main/java/com/ezzerof/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-management-microservice/src/main/java/com/ezzerof/service/impl/OrderServiceImpl.java" afterDir="false" />
+    <list default="true" id="ed28a1b7-f898-4ec0-a7f5-40870dba14a8" name="Changes" comment="Created the Order management microservice module&#10;- Created Models&#10;- Created Service&#10;- Created Repository&#10;- Created CustomExceptions&#10;- Created Utils">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-management-microservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-management-microservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-management-microservice/src/main/java/com/ezzerof/ordermanagementmicroservice/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-management-microservice/src/main/java/com/ezzerof/ordermanagementmicroservice/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ezzerof/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ezzerof/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,14 +30,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2bxWOL9YVWA4V7Osa7HzgWbacLK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -51,29 +50,38 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "18",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Order-fulfillment-system [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Order-fulfillment-system [install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ezzerof.model" />
       <recent name="com.ezzerof.controller" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.OrderManagementApplication">
+    <configuration name="InventoryMicroserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="inventory-microservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ezzerof.inventorymicroservice.InventoryMicroserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="order-management-microservice" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ezzerof.ordermanagementmicroservice.OrderManagementApplication" />
@@ -98,10 +106,37 @@
       <option name="presentableId" value="Default" />
       <updated>1707157179092</updated>
       <workItem from="1707157180289" duration="734000" />
+      <workItem from="1707157924283" duration="5992000" />
+      <workItem from="1707248486790" duration="1485000" />
+      <workItem from="1707848334491" duration="75000" />
     </task>
+    <task id="LOCAL-00001" summary="Created the Order management microservice module&#10;- Created Models&#10;- Created Service&#10;- Created Repository&#10;- Created CustomExceptions&#10;- Created Utils">
+      <option name="closed" value="true" />
+      <created>1707158559339</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707158559339</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created the Order management microservice module&#10;- Created Models&#10;- Created Service&#10;- Created Repository&#10;- Created CustomExceptions&#10;- Created Utils" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the Order management microservice module&#10;- Created Models&#10;- Created Service&#10;- Created Repository&#10;- Created CustomExceptions&#10;- Created Utils" />
   </component>
 </project>
