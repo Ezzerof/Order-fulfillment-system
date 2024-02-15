@@ -1,4 +1,4 @@
-package com.ezzerof.inventorymicroservice.model;
+package com.ezzerof.inventorymicroservice.persistance.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

@@ -1,8 +1,8 @@
 package com.ezzerof.inventorymicroservice.utils;
 
 import com.ezzerof.inventorymicroservice.exception.ValidationException;
-import com.ezzerof.inventorymicroservice.model.Category;
-import com.ezzerof.inventorymicroservice.model.Product;
+import com.ezzerof.inventorymicroservice.persistance.entity.Category;
+import com.ezzerof.inventorymicroservice.persistance.entity.Product;
 
 public class ValidationUtils {
     public static void validateCategory(Category category) {

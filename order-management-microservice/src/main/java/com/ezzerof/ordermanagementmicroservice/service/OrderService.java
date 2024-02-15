@@ -1,6 +1,6 @@
 package com.ezzerof.ordermanagementmicroservice.service;
 
-import com.ezzerof.ordermanagementmicroservice.model.Order;
+import com.ezzerof.ordermanagementmicroservice.persistance.entity.Order;
 
 import java.util.List;
 

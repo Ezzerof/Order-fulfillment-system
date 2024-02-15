@@ -1,7 +1,7 @@
-package com.ezzerof.ordermanagementmicroservice.controller;
+package com.ezzerof.ordermanagementmicroservice.rest.controller;
 
 import com.ezzerof.ordermanagementmicroservice.exception.InvalidItemException;
-import com.ezzerof.ordermanagementmicroservice.model.Item;
+import com.ezzerof.ordermanagementmicroservice.persistance.entity.Item;
 import com.ezzerof.ordermanagementmicroservice.service.ItemService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;

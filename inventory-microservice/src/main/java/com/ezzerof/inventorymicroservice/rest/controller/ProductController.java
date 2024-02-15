@@ -1,6 +1,6 @@
-package com.ezzerof.inventorymicroservice.controller;
+package com.ezzerof.inventorymicroservice.rest.controller;
 
-import com.ezzerof.inventorymicroservice.model.Product;
+import com.ezzerof.inventorymicroservice.persistance.entity.Product;
 import com.ezzerof.inventorymicroservice.service.ProductService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.RequestEntity;
@@ -12,7 +12,7 @@ import java.util.List;
 @RequestMapping("/api/v1/product")
 @AllArgsConstructor
 public class ProductController {
-    private ProductService productService;
+    private final ProductService productService;
 
     @GetMapping("/{id}")
     public RequestEntity<Product> getProductById(@PathVariable Long id) {
