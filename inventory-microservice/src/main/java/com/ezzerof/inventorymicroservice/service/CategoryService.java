@@ -1,6 +1,6 @@
 package com.ezzerof.inventorymicroservice.service;
 
-import com.ezzerof.inventorymicroservice.model.Category;
+import com.ezzerof.inventorymicroservice.persistance.entity.Category;
 
 import java.util.List;
 

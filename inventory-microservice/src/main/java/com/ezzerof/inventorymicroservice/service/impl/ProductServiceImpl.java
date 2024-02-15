@@ -1,8 +1,8 @@
 package com.ezzerof.inventorymicroservice.service.impl;
 
 import com.ezzerof.inventorymicroservice.exception.ProductNotFoundException;
-import com.ezzerof.inventorymicroservice.model.Product;
-import com.ezzerof.inventorymicroservice.repository.ProductRepository;
+import com.ezzerof.inventorymicroservice.persistance.entity.Product;
+import com.ezzerof.inventorymicroservice.persistance.repository.ProductRepository;
 import com.ezzerof.inventorymicroservice.service.ProductService;
 import com.ezzerof.inventorymicroservice.utils.ValidationUtils;
 import lombok.AllArgsConstructor;

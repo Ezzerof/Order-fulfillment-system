@@ -1,8 +1,8 @@
 package com.ezzerof.ordermanagementmicroservice.service.impl;
 
 import com.ezzerof.ordermanagementmicroservice.exception.InvalidOrderException;
-import com.ezzerof.ordermanagementmicroservice.model.Order;
-import com.ezzerof.ordermanagementmicroservice.repository.OrderRepository;
+import com.ezzerof.ordermanagementmicroservice.persistance.entity.Order;
+import com.ezzerof.ordermanagementmicroservice.persistance.repository.OrderRepository;
 import com.ezzerof.ordermanagementmicroservice.service.OrderService;
 import com.ezzerof.ordermanagementmicroservice.utils.ValidateObj;
 import lombok.AllArgsConstructor;

@@ -1,6 +1,6 @@
-package com.ezzerof.inventorymicroservice.controller;
+package com.ezzerof.inventorymicroservice.rest.controller;
 
-import com.ezzerof.inventorymicroservice.model.Category;
+import com.ezzerof.inventorymicroservice.persistance.entity.Category;
 import com.ezzerof.inventorymicroservice.service.CategoryService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;

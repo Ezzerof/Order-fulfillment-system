@@ -2,8 +2,8 @@ package com.ezzerof.ordermanagementmicroservice.utils;
 
 import com.ezzerof.ordermanagementmicroservice.exception.InvalidItemException;
 import com.ezzerof.ordermanagementmicroservice.exception.InvalidOrderException;
-import com.ezzerof.ordermanagementmicroservice.model.Item;
-import com.ezzerof.ordermanagementmicroservice.model.Order;
+import com.ezzerof.ordermanagementmicroservice.persistance.entity.Item;
+import com.ezzerof.ordermanagementmicroservice.persistance.entity.Order;
 
 public class ValidateObj {
 

@@ -1,4 +1,4 @@
-package com.ezzerof.ordermanagementmicroservice.model;
+package com.ezzerof.ordermanagementmicroservice.persistance.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

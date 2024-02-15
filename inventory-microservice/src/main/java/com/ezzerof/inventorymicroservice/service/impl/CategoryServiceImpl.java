@@ -1,8 +1,8 @@
 package com.ezzerof.inventorymicroservice.service.impl;
 
 import com.ezzerof.inventorymicroservice.exception.CategoryNotFoundException;
-import com.ezzerof.inventorymicroservice.model.Category;
-import com.ezzerof.inventorymicroservice.repository.CategoryRepository;
+import com.ezzerof.inventorymicroservice.persistance.entity.Category;
+import com.ezzerof.inventorymicroservice.persistance.repository.CategoryRepository;
 import com.ezzerof.inventorymicroservice.service.CategoryService;
 import com.ezzerof.inventorymicroservice.utils.ValidationUtils;
 import lombok.AllArgsConstructor;
